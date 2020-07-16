@@ -1,6 +1,6 @@
 
 try:
-    fname = input('Enter a file name:')
+    #fname = input('Enter a file name:')
     fhand = open(fname)
 except:
     print('No file found, please check the file name.')
