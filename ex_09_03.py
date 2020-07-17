@@ -1,5 +1,3 @@
-
-
 try:
     fname = input('Enter a file name:')
     fhand = open(fname)
@@ -26,4 +24,5 @@ print(max(counts))
 #    else:
 #        continue
 #print('The max sender is :', k_max, current_max)
+
 print('The max sender is :',  max(counts, key=counts.get), counts[max(counts, key=counts.get)] )
