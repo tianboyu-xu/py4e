@@ -16,6 +16,8 @@ html = urllib.request.urlopen(url, context=ctx).read()
 soup = BeautifulSoup(html, 'html.parser')
 
 # Retrieve all of the anchor tags
-tags = soup('a')
+tags = soup('p')
+counts = 0
 for tag in tags:
-    print(tag.get('href', None))
+    counts = counts + 1
+print(counts)
